@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html><head><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Aditi Sharma — Yoga Coach Profile</title>
+<style>
+*{box-sizing:border-box} body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#fff;color:#0f172a;line-height:1.55}
+a,a:hover,a:focus{text-decoration:none;color:inherit}
+.container{max-width:1100px;margin:0 auto;padding:0 16px}
+header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #e5e7eb}
+.nav{height:64px;display:flex;align-items:center;justify-content:space-between}
+.btn{display:inline-block;padding:10px 14px;border:1px solid #d1d5db;border-radius:10px;background:#fff;font-weight:700;cursor:pointer}
+.btn.primary{background:#0ea5a6;border-color:#0ea5a6;color:#fff}
+.badge{display:inline-flex;align-items:center;padding:6px 10px;border-radius:999px;background:#eef2ff;border:1px solid #e5e7eb;font-size:12px;margin-right:8px;margin-bottom:8px}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:16px;box-shadow:0 6px 14px rgba(2,8,23,.03)}
+.grid{display:grid;gap:16px}
+@media(min-width:860px){.grid-2{grid-template-columns:360px 1fr}}
+.section{padding:18px 0 26px}
+.hero{border-radius:16px;border:1px solid #e5e7eb;overflow:hidden}
+.tabs{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap}
+.tab{padding:8px 12px;border:1px solid #e5e7eb;border-radius:999px;cursor:pointer;font-weight:700}
+.tab.active{background:#0ea5a6;color:#fff;border-color:#0ea5a6}
+.panel{display:none;margin-top:12px} .panel.active{display:block}
+.list>li{margin:6px 0}
+.pgrid{display:grid;gap:12px} @media(min-width:900px){.pgrid{grid-template-columns:repeat(4,1fr)}}
+.pcard{background:#fff;border:2px solid #e2e8f0;border-radius:14px;padding:16px;display:flex;flex-direction:column}
+.pcard.best{background:#f5f3ff;border-color:#6366f1}
+.rating{color:#f59e0b;font-weight:900}
+footer{border-top:1px solid #e5e7eb;padding:20px 0;margin-top:24px;color:#64748b;font-size:12px}
+</style>
+<script src="calendar.js"></script>
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"/><script async="true" src="https://assets.calendly.com/assets/external/widget.js"></script></head><body>
+<header><div class="container nav">
+<div style="display:flex;align-items:center;gap:10px">
+<div style="width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,#3b82f6,#22d3ee)"></div>
+<strong>YogaGuru</strong>
+</div>
+<div>
+<a class="btn" href="index.html">Home</a>
+<a class="btn primary" href="#" onclick="return openCalendly();">Book Free Trial</a>
+</div>
+</div></header>
+<main class="container">
+<section class="section">
+<div class="hero" style="background:linear-gradient(90deg,#f5f3ff,#e6fffb);height:140px"></div><img alt="Coach Photo" src="images/aditi-sharma.jpg" style="width:100%;max-height:280px;object-fit:cover;border-radius:12px;margin-top:10px;border:1px solid #e5e7eb"/>
+<div class="grid grid-2" style="margin-top:12px">
+<div class="card">
+<h1 style="margin:0 0 6px 0">Aditi Sharma</h1>
+<div class="badge">Trial available</div><div class="badge">Live schedule</div><div class="badge">Top Rated ★★★★☆</div>
+<p style="color:#475569;margin-top:10px">
+          Hi, I’m Aditi Sharma. I help students build consistency and strength with compassionate coaching and structured programs.
+        </p>
+<ul class="list" style="padding-left:18px;color:#475569">
+<li><strong>Location:</strong> Mumbai</li>
+<li><strong>Languages:</strong> Hindi, English</li>
+<li><strong>Experience:</strong> 8+ years</li>
+<li><strong>Certifications:</strong> RYT‑500, Yoga Alliance</li>
+<li><strong>Work days &amp; hours:</strong> Mon–Sat • 6–9 AM &amp; 6–9 PM</li>
+</ul>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
+<a class="btn primary" href="#" onclick="return openCalendly();">Book Free Trial</a>
+<a class="btn" href="#passes">Choose a Plan</a>
+</div>
+</div>
+<div class="card">
+<h3 style="margin:0 0 8px 0">Quick Highlights</h3>
+<ul class="list" style="padding-left:18px;color:#475569">
+<li>Specialisation: Hatha, Pranayama, Mobility</li>
+<li>Beginner‑friendly progressions</li>
+<li>Focus on breath &amp; form</li>
+<li>1000+ classes taught</li>
+</ul>
+<p class="rating" style="margin-top:10px">★★★★★ 4.9/5 from 120+ members</p>
+</div>
+</div>
+<div class="tabs">
+<div class="tab active" data-tab="profile">My Profile</div>
+<div class="tab" data-tab="schedule">Schedule &amp; Availability</div>
+<div class="tab" data-tab="courses">Courses</div>
+<div class="tab" data-tab="passes">Passes &amp; Pricing</div>
+<div class="tab" data-tab="reviews">Reviews</div>
+<div class="tab" data-tab="faq">FAQ</div>
+<div class="tab" data-tab="contact">Contact</div>
+</div>
+<div class="panel active" id="profile">
+<div class="card">
+<p><strong>About me:</strong> I blend traditional yoga with modern mobility drills to help you feel energetic, pain‑free, and calm.</p>
+<p><strong>Teaching style:</strong> Cue‑rich, encouraging, and safe for all levels.</p>
+<p><strong>What students say:</strong> “Clear instructions”, “Motivating”, “Great with beginners”.</p>
+</div>
+</div>
+<div class="panel" id="schedule">
+<div class="card">
+<h3>Weekly Schedule (IST)</h3>
+<ul class="list" style="padding-left:18px">
+<li>Mon — 6:00–7:00 AM (Hatha)</li>
+<li>Wed — 6:00–7:00 PM (Flow)</li>
+<li>Fri — 7:00–8:00 AM (Breathwork)</li>
+</ul>
+<div style="margin-top:12px">
+<a class="btn primary" href="#" onclick="return openCalendly();">Book a Free Trial Slot</a>
+</div>
+</div>
+</div>
+<div class="panel" id="courses">
+<div class="card">
+<h3>Programs &amp; Class Types</h3>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:10px">
+<div class="card"><strong>Beginner Foundation (4 weeks)</strong><p>Basics, breath, posture.</p></div>
+<div class="card"><strong>Core &amp; Mobility (4 weeks)</strong><p>Strength with flexibility.</p></div>
+<div class="card"><strong>Stress Relief (3 weeks)</strong><p>Slow flow + pranayama.</p></div>
+</div>
+</div>
+</div>
+<div class="panel" id="passes">
+<div class="pgrid">
+<div class="pcard">
+<div style="font-weight:900">Free Trial</div>
+<div style="font-size:22px;font-weight:900">₹0</div>
+<ul class="list" style="padding-left:18px;color:#475569">
+<li>1 live class</li><li>Coach Q&amp;A</li><li>WhatsApp reminder</li>
+</ul>
+<a class="btn primary" href="#" onclick="return openCalendly();">Book Free Trial</a>
+</div>
+<div class="pcard">
+<div style="font-weight:900">7‑Day Pass</div>
+<div style="font-size:22px;font-weight:900">₹350</div>
+<ul class="list" style="padding-left:18px;color:#475569">
+<li>Valid 7 days</li><li>Access to group classes</li><li>Flexible time slots</li>
+</ul>
+<a class="btn primary" href="payment.html?coach=Aditi%20Sharma&amp;plan=7-Day%20Pass">Pay Now</a>
+</div>
+<div class="pcard best">
+<div style="font-weight:900">30‑Day / Monthly</div>
+<div style="font-size:22px;font-weight:900">₹999</div>
+<ul class="list" style="padding-left:18px;color:#475569">
+<li>Unlimited classes</li><li>Progress tracking</li><li>Priority support</li>
+</ul>
+<a class="btn primary" href="payment.html?coach=Aditi%20Sharma&amp;plan=30-Day%20Pass">Pay Now</a>
+</div>
+<div class="pcard">
+<div style="font-weight:900">VIP 1:1 Coaching</div>
+<div style="font-size:22px;font-weight:900">₹5000</div>
+<ul class="list" style="padding-left:18px;color:#475569">
+<li>4 × 45‑min private sessions</li><li>Personalised plan</li><li>Diet plan &amp; check‑ins</li>
+</ul>
+<a class="btn primary" href="payment.html?coach=Aditi%20Sharma&amp;plan=VIP%201:1">Pay Now</a>
+</div>
+</div>
+</div>
+<div class="panel" id="reviews">
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px">
+<div class="card"><p>“Felt safe and supported as a beginner.”</p><p><strong>— Kavya, Pune</strong></p></div>
+<div class="card"><p>“Great breathwork cues; energy improved.”</p><p><strong>— Aman, Delhi</strong></p></div>
+<div class="card"><p>“Clear progress in 4 weeks. Highly recommend.”</p><p><strong>— Sanya, Bengaluru</strong></p></div>
+</div>
+</div>
+<div class="panel" id="faq">
+<div class="card">
+<p><strong>What if I miss a class?</strong> You can join another group slot in your pass validity.</p>
+<p><strong>Is this okay for beginners?</strong> Absolutely — modifications are provided.</p>
+<p><strong>Can I pause my pass?</strong> One pause allowed on monthly pass (up to 7 days).</p>
+</div>
+</div>
+<div class="panel" id="contact">
+<div class="card" style="max-width:520px">
+<h3>Ask a question</h3>
+<form onsubmit="event.preventDefault(); alert('Thanks! We\'ll reach out on WhatsApp.');">
+<input placeholder="Your Name" required="" style="width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:10px;margin-top:8px"/>
+<input placeholder="WhatsApp Number" required="" style="width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:10px;margin-top:8px"/>
+<textarea placeholder="Your question" rows="4" style="width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:10px;margin-top:8px"></textarea>
+<div style="margin-top:10px"><button class="btn primary">Send</button></div>
+</form>
+</div>
+</div>
+<p style="margin-top:18px"><a class="btn" href="index.html">← Back to Home</a></p>
+</section>
+</main>
+<footer><div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+<div>© <script>document.write(new Date().getFullYear())</script> YogaGuru</div>
+<div>Build: profile‑enhanced</div>
+</div></footer>
+<script>
+document.querySelectorAll('.tab').forEach(t=>{
+  t.addEventListener('click',()=>{
+    document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+    t.classList.add('active');
+    document.getElementById(t.dataset.tab).classList.add('active');
+  });
+});
+</script>
+
+<script>
+window.openCalendly = function(){ Calendly.initPopupWidget({ url: 'https://calendly.com/emailprashantsharda/free-trial-with-aditi-sharma' }); return false; };
+</script>
+</body></html>
